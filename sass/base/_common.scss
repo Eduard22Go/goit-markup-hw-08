@@ -1,0 +1,37 @@
+body {
+    margin:0;
+    background-color: var(--primery-background-color);    
+    color:var(--secondary-text-color);
+    font-family:'roboto', 'serif', 'verdana','tahoma', sans-serif;
+    font-size:14px;
+    letter-spacing: 0.03em;
+
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin:0;
+    padding:0
+} 
+
+.link { 
+    text-decoration: none;
+}
+
+
+/* Убирает маркер в списках  */
+.list,
+.feature-list {
+    list-style: none;
+}
+// Для респонсивности изоражений
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
