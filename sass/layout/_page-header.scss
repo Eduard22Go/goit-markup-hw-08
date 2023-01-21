@@ -34,7 +34,7 @@
         width: 100%;
         height: 100vh;
         overflow: auto;
-        background-color: bisque;
+        background-color: var(--primery-background-color);
 
         opacity: 0;
         visibility: hidden;
@@ -62,8 +62,80 @@
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
+        padding-left: 40px;
+
+        font-family: Roboto;
+        font-size: 40px;    
+        line-height: 1.18;
+        font-weight: 500;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: 2%;
     }
-    
+
+    .mobile-menu-nav {
+        margin-bottom: 306px;
+    }
+    .mobile-menu-nav__link {
+        color: var(--headers-color); 
+        &--current {
+            color:var(--header-link-color)
+        }
+    }
+    .mobile-menu-nav__item:not(:last-child)  {
+        margin-bottom: 32px;
+    }
+
+    .mobile-menu-address {
+        margin-bottom: 64px;
+    }
+    .mobile-menu-address__item:not(:last-child)  {
+        margin-bottom: 32px;
+    }
+    .mobile-menu-address__item--mail {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 2%;
+        }
+    .mobile-menu-address__link { 
+        font-style: normal;
+        color:var(--secondary-text-color);
+        &--current {
+            color:var(--header-link-color);
+            font-size: 34px;
+        }  
+    }
+
+    .mobile-menu-soc__list {
+        display: flex;
+        
+        font-family: roboto;
+        font-style: Medium;
+        font-size: 18px;
+        line-height:1.22;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: 2%;
+
+    }
+    .mobile-menu-soc__link {
+        color:var(--header-link-color);
+
+        display: block;
+        // margin-right:20px;
+        padding-right: 20px;
+        position:relative;
+    }
+// stop
+    .mobile-menu-soc__link::after {
+        content: '';
+        height: 100%;
+        width:1px ;
+        background-color:rgba(33, 33, 33, 0.2);
+        position: absolute;
+        right: 10px;
+        // bottom: -1px;
+        }
 }
 
 @media screen and (min-width:768px) {
@@ -86,6 +158,11 @@
     }
 }
 
+@media screen and (min-width:1200px) {
+    .address__list {
+        display: flex;
+    } 
+}
 
 
 
