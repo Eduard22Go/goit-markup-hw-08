@@ -114,12 +114,65 @@
     </header>
     <main>
         <!--Секція Герой-->
-        <!-- <section class="hero-overlay">
+        <section class="hero-overlay">
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>       
             </div>
-        </section> -->
+        </section>
+            <!-- Backdrop and Modal-->
+        <div class="backdrop backdrop--is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal__close-btn" data-modal-close>
+              <svg class="modal__close-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <p class="modal__header">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal__inputs">
+              <div class="modal__field">
+                <label for="name" class="modal__field-label" >Ім'я</label>
+                <div class="modal__input">
+                  <input type="text" name="name" id="name" class="modal__field-input" placeholder=" ">
+                  <svg class="modal__field-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-person-black-18dp"></use>
+                  </svg>
+                </div>
+              </div>    
+              <div class="modal__field">
+                <label for="phone" class="modal__field-label" >Телефон</label>
+                <div class="modal__input">
+                  <input type="text" name="phone" id="phone" class="modal__field-input" placeholder=" ">
+                    <svg class="modal__field-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+                    </svg>
+                </div>
+              </div>    
+              <div class="modal__field">
+                <label for="email" class="modal__field-label" >Пошта</label>
+                <div class="modal__input">
+                  <input type="text" name="email" id="email" class="modal__field-input" placeholder=" ">
+                    <svg class="modal__field-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-email-black-18dp"></use>
+                    </svg>
+                </div>
+              </div>
+              <div class="modal__field">
+                <label for="coment" class="modal__field-label" >Коментар</label>
+                <textarea class="modal__field-input--coment" name="coment" id="coment" placeholder="Введіть текст" ></textarea>
+              </div>
+              <div class="modal__field-license">
+                <label class="modal__license-label" for="license" >
+                  <input class="modal__license-input" type="checkbox" name="license" value="license" id="license">
+                  <span class="modal__license-icon"></span>
+                  <span class="modal__license-text">Погоджуюся з розсилкою та приймаю&nbsp;</span>
+                  <span><a href="" class="modal__license-link">Умови договору</a></span> 
+                </label>
+              </div>
+              <button class="modal__btn-send" type="submit">Відправити</button>  
+            </form>
+          </div>
+        </div>
          <!--Секція Особливості -->
         <!-- <section class="section feature">
             <div class="container">
@@ -487,60 +540,6 @@
           </form>
         </div>
     </footer> -->
-
-    <!-- Backdrop and Modal-->
-    <!-- <div class="backdrop backdrop--is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__close-btn" data-modal-close>
-          <svg class="modal__close-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <p class="modal__header">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal__inputs">
-          <div class="modal__field">
-            <label for="name" class="modal__field-label" >Ім'я</label>
-            <div class="modal__input">
-              <input type="text" name="name" id="name" class="modal__field-input" placeholder=" ">
-              <svg class="modal__field-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black-18dp"></use>
-              </svg>
-            </div>
-          </div>    
-          <div class="modal__field">
-            <label for="phone" class="modal__field-label" >Телефон</label>
-            <div class="modal__input">
-              <input type="text" name="phone" id="phone" class="modal__field-input" placeholder=" ">
-                <svg class="modal__field-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone-black-18dp"></use>
-                </svg>
-            </div>
-          </div>    
-          <div class="modal__field">
-            <label for="email" class="modal__field-label" >Пошта</label>
-            <div class="modal__input">
-              <input type="text" name="email" id="email" class="modal__field-input" placeholder=" ">
-                <svg class="modal__field-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email-black-18dp"></use>
-                </svg>
-            </div>
-          </div>
-          <div class="modal__field">
-            <label for="coment" class="modal__field-label" >Коментар</label>
-            <textarea class="modal__field-input--coment" name="coment" id="coment" placeholder="Введіть текст" ></textarea>
-          </div>
-          <div class="modal__field-license">
-            <label class="modal__license-label" for="license" >
-              <input class="modal__license-input" type="checkbox" name="license" value="license" id="license">
-              <span class="modal__license-icon"></span>
-              <span class="modal__license-text">Погоджуюся з розсилкою та приймаю&nbsp;</span>
-              <span><a href="" class="modal__license-link">Умови договору</a></span> 
-            </label>
-          </div>
-          <button class="modal__btn-send" type="submit">Відправити</button>  
-        </form>
-      </div>
-    </div> -->
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
 </body>

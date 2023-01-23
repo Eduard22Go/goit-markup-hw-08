@@ -23,8 +23,10 @@
 .modal {
     position: absolute;
     padding:40px;
-    width: 528px;
-    min-height: 581px;
+
+    width: 450px;
+    min-height: 609px;
+    // width: 100%;
     top: 50%;
     left: 50%;
     border-radius: 4px;
@@ -36,6 +38,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal__close-btn {
     position: absolute;
@@ -63,22 +66,20 @@
 }
   
 /* Оформление формы модального окна */
+
 .modal__header {
-    display:flex;
+    display:block;
     margin-bottom: 12px;
     justify-content: center;
-    align-items: center;
-
-    width: 448px;
-    height: 23px;
+    // width: 370px;
+    height: 60px;
 
     font-family: $font-family-main;
     font-weight: 700;
     font-size: 20px;
     line-height: 1,15;
-    text-align: сenter;
     letter-spacing: 3%;
-
+    text-align: center;
     color:var(--headers-color);
 }
 
@@ -250,7 +251,7 @@
 
     font-family: $font-family-main;
     font-style: Regular;
-    font-size: 14px;
+    font-size: 12px;
     line-height:1.7;
     
     vertical-align: top;
@@ -288,4 +289,23 @@
     font-size: 16px;
     line-height:1.9;
     letter-spacing: 6%;
+}
+@media screen and (min-width:1200px) {
+    .modal {
+        width: 528px;
+        min-height: 581px;        
+    }
+    .modal__header {
+        display:block;
+        margin-bottom: 12px;
+        justify-content: center;
+        align-items: center;
+    
+        width: 448px;
+        height: 23px;
+    }
+
+    .modal__license-label {
+    font-size: 14px;
+    }
 }
