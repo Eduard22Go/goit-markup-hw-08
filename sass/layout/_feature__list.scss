@@ -48,8 +48,10 @@
   }
   .feature__item {
     flex-basis:calc((100% - 60px)/2);
-    margin-left: 15px;
-    margin-right: 15px;
+    // margin-left: 15px;
+    // margin-right: 15px;
+    margin: 15px;
+
     }
 }
 
