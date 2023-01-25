@@ -11,6 +11,9 @@
 
 
 @media screen and (max-width:768px) {
+    .page-header__container {
+        height: 60px;
+    }
     .site-nav {
         display: none;
     }
@@ -51,7 +54,7 @@
     .mobile-menu.is-open {
         opacity: 1;
         visibility:visible;
-        pointer-events: auto;    
+        pointer-events: auto;  
     }
 
     .mobile-menu__close-btn {
@@ -150,9 +153,16 @@
         // bottom: -1px;
         }
 }
+@media screen and (min-width:480px) {
+    .page-header__container {
+        height: 60px;
+    }
+}
 
 @media screen and (min-width:768px) {
-    
+    .page-header__container {
+        height: 80px;
+    }
     .nav-header {
         display: flex;
         align-items: center;
