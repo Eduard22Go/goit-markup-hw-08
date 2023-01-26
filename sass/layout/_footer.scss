@@ -1,11 +1,44 @@
 .footer {
     background-color: var(--footer-background-color);
     padding-top: 60px;
-    padding-bottom: 57px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
-    // display: flex;
-    align-items: baseline;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
+// .footer-container {
+//     // display: flex;
+//     align-items: baseline;
+// }
+
+.address__list--footer {
+    display:flex;
+    flex-direction: column;
+
+}
+
+// .address__item--footer {
+//     margin:0px;
+// }
+
+// .address__link--footer {
+//     padding: 0px;
+//     margin-bottom: 9px;
+
+//     color: rgba(255, 255, 255, 0.6);
+//     font-weight: 400;
+// }
+
+// .address__link--footer-street {
+//     color: var(--primery-background-color);
+//     font-weight: 400;
+// }
+
+
 
