@@ -1,11 +1,38 @@
-// .portfolio-cards-list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
-// }
+.portfolio-section {
+    padding:60px 0px;
+}
+.portfolio-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.portfolio-card {
-    max-width: 370px;
+
+@media screen and (max-width:1200px) {
+    .portfolio-card {
+        flex-basis:calc((100% - 60px)/2);
+        margin:15px;
+        }
+    .portfolio-cards-list {
+        margin:-15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portfolio-cards-list {
+        display:block;
+    }
+    .portfolio-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .portfolio-section {
+        padding:94px 0px;
+    }
+    .portfolio-cards-list {
+        gap: 30px;
+    }
 }
 
 .portfolio-card__title {
@@ -25,7 +52,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-    padding-right: 24px;
+    // padding-right: 24px;
     border-left: 1px solid var(--portfolio-cards-border);
     border-right: 1px solid var(--portfolio-cards-border);
     border-bottom: 1px solid var(--portfolio-cards-border);

@@ -1363,10 +1363,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio__select {
@@ -1374,6 +1376,7 @@ button {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-bottom: 15px;
   color: var(--headers-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -1399,29 +1402,46 @@ button {
 .portfolio__select--all {
   color: var(--white-simbols-color);
   background-color: var(--header-link-color);
-  min-width: 73px;
 }
 
-.portfolio__select--web {
-  min-width: 125px;
+.portfolio-section {
+  padding: 60px 0px;
 }
 
-.portfolio__select--dods {
-  min-width: 112px;
+.portfolio-cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.portfolio__select--disain {
-  min-width: 103px;
+@media screen and (max-width: 1200px) {
+  .portfolio-card {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  .portfolio-cards-list {
+    margin: -15px;
+  }
 }
-
-.portfolio__select--marketing {
-  min-width: 130px;
+@media screen and (max-width: 768px) {
+  .portfolio-cards-list {
+    display: block;
+  }
+  .portfolio-img {
+    width: 100%;
+  }
 }
-
-.portfolio-card {
-  max-width: 370px;
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 0px;
+  }
+  .portfolio-cards-list {
+    gap: 30px;
+  }
 }
-
 .portfolio-card__title {
   color: var(--headers-color);
   font-weight: 700;
@@ -1441,7 +1461,6 @@ button {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  padding-right: 24px;
   border-left: 1px solid var(--portfolio-cards-border);
   border-right: 1px solid var(--portfolio-cards-border);
   border-bottom: 1px solid var(--portfolio-cards-border);
