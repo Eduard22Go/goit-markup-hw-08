@@ -27,15 +27,15 @@
 }
 
 @media screen and (max-width:480px) {
-    // .no-scroll {
-    //     opacity:0;
-    //     visibility:hidden;
-    //     pointer-events: none;
+    // .mobile-menu.is-open {
+    //     opacity: 1;
+    //     visibility:visible;
+    //     pointer-events: auto;
     // }
-    // .no-scroll {
-    //     overflow: hidden;
+    // .mobile-menu.is-open {
+    //     position: relative;
     // }
-    
+
 }
 
 @media screen and (min-width:1200px) {
