@@ -155,8 +155,11 @@
     display: flex;
     flex-wrap: wrap;
     // align-items: baseline;
-    justify-content: space-between;
-    }  
+    justify-content: center;
+    } 
+    .address-content {
+        margin-right: 165px;
+    } 
     .form-footer {
     margin-left: auto;
     margin-right:auto;

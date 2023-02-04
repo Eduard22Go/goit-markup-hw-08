@@ -26,18 +26,11 @@
     }
 }
 
-@media screen and (max-width:480px) {
-    // .mobile-menu.is-open {
-    //     opacity: 1;
-    //     visibility:visible;
-    //     pointer-events: auto;
-    // }
-    // .mobile-menu.is-open {
-    //     position: relative;
-    // }
-
+@media  screen and (min-width:768px) and (max-width:1199px) {
+    .portfolio-card__footer {
+        padding-right: 24px;
+    }
 }
-
 @media screen and (min-width:1200px) {
     .portfolio-section {
         padding:94px 0px;
@@ -118,3 +111,13 @@
     padding-top: 63px;
     padding-bottom: 63px;
 }
+
+@media screen and (max-width:479px) {
+   .portfolio-card__desctiption {
+    padding-top:0px;
+   } 
+}
+
+// .portfolio-card__desctiption {
+//     vertical-align:middle;
+//    } 

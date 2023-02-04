@@ -1,8 +1,14 @@
 .portfolio__filter {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .portfolio__filter {
+        justify-content: center;
+    }
 }
 .portfolio__select {
     display: inline-block;
@@ -42,15 +48,3 @@
     // min-width:73px;  
 }
 
-// .portfolio__select--web {
-//     min-width: 125px;
-// }
-// .portfolio__select--dods {
-//     min-width: 112px;
-// }
-// .portfolio__select--disain {
-//     min-width: 103px;
-// }
-// .portfolio__select--marketing {
-//     min-width: 130px;
-// }
