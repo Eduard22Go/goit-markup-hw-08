@@ -97,7 +97,7 @@
     }
 
     .mobile-menu-nav {
-        margin-bottom: 306px;
+        margin-bottom: 300px;
     }
     .mobile-menu-nav__link {
         color: var(--headers-color); 
@@ -168,6 +168,31 @@
         // bottom: -1px;
         }
 }
+@media screen and (max-width:479px) {
+    .mobile-menu {
+        z-index: 1;
+    }
+    .mobile-menu__container {
+        padding-left: 20px;
+    }
+    .mobile-menu-nav {
+        margin-bottom: 50px;
+    }
+    .mobile-menu-address__link {
+        font-size: 30px;
+    }
+    .mobile-menu-soc__list {
+        font-size: 14px;
+    }
+    .mobile-menu-soc__link {
+        padding-right: 14px;
+    }
+    .mobile-menu-soc__link::after {
+        right: 7px;
+        // bottom: -1px;
+        }
+}
+
 @media screen and (min-width:480px) {
     .page-header__container {
         height: 60px;

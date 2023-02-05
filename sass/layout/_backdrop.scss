@@ -26,7 +26,7 @@
 
     width: 450px;
     min-height: 609px;
-    // width: 100%;
+    
     top: 50%;
     left: 50%;
     border-radius: 4px;
@@ -290,6 +290,20 @@
     line-height:1.9;
     letter-spacing: 6%;
 }
+
+@media screen and (max-width:479px) {
+    .modal {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .modal__field-license {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }   
+} 
+
 @media screen and (min-width:1200px) {
     .modal {
         width: 528px;
