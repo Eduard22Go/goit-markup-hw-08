@@ -639,7 +639,7 @@ button {
 }
 .works {
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .works__list {
@@ -650,6 +650,7 @@ button {
 
 .works__img {
   position: relative;
+  width: 370px;
 }
 
 .works__txt {
@@ -674,7 +675,7 @@ button {
   width: 100%;
   height: 70px;
   left: 0px;
-  bottom: 0px;
+  bottom: 15px;
 }
 
 .works__list :not(:last-child) {
